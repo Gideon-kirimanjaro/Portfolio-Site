@@ -1,0 +1,102 @@
+<template>
+  <div>
+    <a class="glassIco" href="#"><i class="fab fa-facebook-f"></i></a>
+    <a class="glassIco" href="#"><i class="fab fa-instagram"></i></a>
+    <a class="glassIco" href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a class="glassIco" href="#"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Socials',
+}
+</script>
+
+<style scoped>
+/*
+ * Preparing stage
+*/
+html,
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-image: linear-gradient(135deg, #f97794 10%, #623aa2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+/* 
+ * Start 
+*/
+.glassIco {
+  --width: 100px;
+  width: var(--width);
+  height: var(--width);
+  color: #fff;
+  font-size: 30px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  margin: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.glassIco,
+.glassIco * {
+  box-sizing: border-box;
+  transition: 200ms;
+}
+.glassIco:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  filter: blur(0px);
+  transition: 400ms;
+  transform: skewX(45deg) translateX(calc(var(--width) + 50%));
+}
+.glassIco:hover {
+  transform: translateY(-20px);
+}
+.glassIco:hover:before {
+  transform: skewX(45deg) translateX(calc(var(--width) * -1 - 50%));
+}
+.glassIco > * {
+  opacity: 0.8;
+}
+</style>

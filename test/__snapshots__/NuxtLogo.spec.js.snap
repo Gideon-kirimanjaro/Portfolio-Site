@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio NuxtLogo renders properly 1`] = `
+"<div class=\\"portfolio\\">
+  <h2 class=\\"d-flex justify-content-center\\"><u> PORTFOLIO </u></h2>
+  <div class=\\"d-flex justify-content-center p-3\\"><img height=\\"200\\" width=\\"200\\" src=\\"@/static/images/man.png\\" alt=\\"\\"></div>
+  <h4 class=\\"d-flex justify-content-center text-success mt-2 mb-4 px-5 font-weight-bold\\">
+    A glimpse of the projects I've been working on.
+  </h4>
+  <div>
+    <b-tabs pills=\\"\\" card=\\"\\">
+      <b-tab title=\\"Web\\" active=\\"\\">
+        <b-card-text class=\\"d-flex justify-content-center\\">
+          <web-stub></web-stub>
+        </b-card-text>
+      </b-tab>
+      <b-tab title=\\"Graphic Design\\">
+        <b-card-text class=\\"d-flex justify-content-center\\">
+          <design-stub></design-stub>
+        </b-card-text>
+      </b-tab>
+      <b-tab title=\\"Support\\">
+        <b-card-text class=\\"d-flex justify-content-center\\">
+          <networking-stub></networking-stub>
+        </b-card-text>
+      </b-tab>
+      <b-tab title=\\"Data\\">
+        <b-card-text class=\\"d-flex justify-content-center\\">
+          <dash-stub></dash-stub>
+        </b-card-text>
+      </b-tab>
+    </b-tabs>
+  </div>
+</div>"
+`;
