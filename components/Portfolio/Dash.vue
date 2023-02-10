@@ -12,8 +12,8 @@
           <iframe
             target="_blank"
             :title="item.title"
-            width="500"
-            height="400"
+            width="300"
+            height="300"
             :src="item.src"
             frameborder="0"
             allowFullScreen="true"
@@ -42,10 +42,7 @@
     </b-container>
   </div>
 </template>
-
 <script>
-// import FolioCard from '../UI/FolioCard'
-// import 'bootstrap/dist/css/bootstrap.min.css'
 export default {
   name: 'Dash',
   data: () => {

@@ -6,12 +6,7 @@
         <img height="230" width="270" src="@/static/images/tool.png" alt="" />
       </div>
       <div id="container" class="row">
-        <div
-          v-for="item in db"
-          id="card"
-          :key="item"
-          class="col-lg-2 col-md-4 col-sm-6 col-xs-12 ml-5"
-        >
+        <div v-for="item in db" id="card" :key="item" class="col">
           <div class="imgBx"><img src="" /></div>
           <div class="contentBx">
             <h3 class="text-light">{{ item.header }}</h3>

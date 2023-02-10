@@ -15,7 +15,12 @@
           </div>
         </b-modal>
       </div>
-      <div v-for="item of data" id="main" :key="item" class="col">
+      <div
+        v-for="item of data"
+        id="main"
+        :key="item"
+        class="col d-flex justify-content-center"
+      >
         <img
           v-b-modal.modal-1
           :src="require(`~/assets/design/${item.url}.jpg`)"

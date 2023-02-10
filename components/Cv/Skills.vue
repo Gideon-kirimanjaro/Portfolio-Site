@@ -12,7 +12,7 @@
             <p>
               {{ skill.description }}
             </p>
-            <a href=""> <i> Kirimanjaro</i></a>
+            Kirimanjaro
           </div>
         </div>
       </div>

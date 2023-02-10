@@ -71,9 +71,10 @@
       </div>
       <Profile />
     </div>
-    <Timeline />
+
     <div ref="services">
-      <Services />
+      <!-- <Services /> -->
+      <Resume />
     </div>
     <div ref="blog">
       <Blog />
@@ -89,15 +90,16 @@
 </template>
 
 <script>
+import Resume from '../Resume/Resume.vue'
 export default {
   name: 'Navbar',
-  components: {},
+  components: { Resume },
   data: () => {
     return {
       db: [
         { title: 'Welcome', svg: ['fas', 'clipboard'], id: 'welcome' },
         { title: 'About', svg: ['fas', 'address-card'], id: 'about' },
-        { title: 'Services', svg: ['fas', 'code'], id: 'services' },
+        { title: 'Experience', svg: ['fas', 'code'], id: 'services' },
         { title: 'Blog', svg: ['fas', 'print'], id: 'blog' },
         { title: 'Portfolio', svg: ['fas', 'bars'], id: 'portfolio' },
         { title: 'Testimonials', svg: ['fas', 'comments'], id: 'testimonials' },
@@ -152,7 +154,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #f5f5f5;
 }
 

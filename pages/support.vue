@@ -15,8 +15,8 @@
         <div class="pl-sm-5">
           <img
             class="mt-2"
-            width="320"
-            height="330"
+            width="300"
+            height="300"
             :src="require(`@/static/images/${image.name}`)"
             alt=""
           />
@@ -45,7 +45,6 @@
     <Contact />
   </div>
 </template>
-
 <script>
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Slider from '../components/Portfolio/Slider'

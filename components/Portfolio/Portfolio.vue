@@ -12,63 +12,46 @@
       A glimpse of the projects I've been working on.
     </h4>
     <div>
-      <b-tabs pills card>
-        <b-tab title="Web" active
-          ><b-card-text class="d-flex justify-content-center"
-            ><Web /></b-card-text
-        ></b-tab>
-        <b-tab title="Graphic Design"
-          ><b-card-text class="d-flex justify-content-center"
-            ><Design /></b-card-text
-        ></b-tab>
-        <b-tab title="Support"
-          ><b-card-text class="d-flex justify-content-center"
-            ><Networking /></b-card-text
-        ></b-tab>
-        <b-tab title="Data"
-          ><b-card-text class="d-flex justify-content-center"
-            ><Dash /></b-card-text
-        ></b-tab>
-      </b-tabs>
+      <Tabs :data="projects" />
     </div>
-    <!-- <div class="port2">
-      <div ref="web">
-        <Web />
-      </div>
-      <div ref="dash">
-        <Dash />
-      </div>
-      <div ref="networking">
-        <Networking />
-      </div>
-    </div> -->
+    <Slider />
   </div>
 </template>
 
 <script>
-import Dash from '../Portfolio/Dash'
-import Web from '../Portfolio/Web'
-import Networking from '../Portfolio/Networking'
-import Design from './Design.vue'
+import Tabs from '../UI/Tabs.vue'
+import Slider from './Slider.vue'
 export default {
   name: 'Portfolio',
   components: {
-    Dash,
-    Web,
-    Networking,
-    Design,
+    Tabs,
+    Slider,
   },
-  methods: {
-    // showData(refName) {
-    //   const element = this.$refs[refName]
-    //   const top = element.offsetTop
-    //   window.scrollTo(0, top)
-    // },
-    // showWeb(refName) {
-    //   const element = this.$refs[refName]
-    //   const top = element.offsetTop
-    //   window.scrollTo(0, top)
-    // },
+  data() {
+    return {
+      projects: [
+        {
+          key: 1,
+          title: 'Web Development',
+          component: 'Web',
+        },
+        {
+          key: 2,
+          title: 'Graphic Design',
+          component: 'Design',
+        },
+        {
+          key: 3,
+          title: 'Networking & Support',
+          component: 'Networking',
+        },
+        {
+          key: 4,
+          title: 'Data',
+          component: 'Dash',
+        },
+      ],
+    }
   },
 }
 </script>

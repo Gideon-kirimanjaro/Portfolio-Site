@@ -1,6 +1,6 @@
 <template>
   <div class="mt-4">
-    <h4 class="d-flex justify-content-center text-light font-weight-bold mb-3">
+    <h4 class="d-flex justify-content-center text-dark font-weight-bold mb-3">
       <u>Companies that have trusted my skills</u>
     </h4>
     <infinite-slide-bar>

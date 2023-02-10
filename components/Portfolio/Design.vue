@@ -1,7 +1,6 @@
 <template>
   <GridRow :data="data" />
 </template>
-
 <script>
 import GridRow from '../UI/GridRow.vue'
 export default {
