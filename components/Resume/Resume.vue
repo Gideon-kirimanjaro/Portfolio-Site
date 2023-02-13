@@ -27,7 +27,7 @@
       class="d-md-flex justify-content-center m-3"
     >
       <div id="exp" class="d-flex justify-content-center">
-        <p>{{ item.dates }}</p>
+        <h5>{{ item.dates }}</h5>
       </div>
       <div id="exp" class="px-2">
         <h5 class="d-flex justify-content-center my-2">

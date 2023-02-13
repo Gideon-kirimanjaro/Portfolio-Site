@@ -15,7 +15,6 @@
     <button @click="moveUp">Scroll up</button>
   </div>
 </template>
-
 <script>
 import VueWhatsappWidget from 'vue-whatsapp-widget'
 import 'bootstrap/dist/css/bootstrap.min.css'
