@@ -9,7 +9,7 @@
           :active="item.key === 1"
           ><b-card-text class="d-flex justify-content-center">
             <div v-if="item.content">
-              <p>{{ item.content }}</p>
+              <h4>{{ item.content }}</h4>
               <div class="d-flex justify-content-center">
                 <b-button variant="outline-primary" class="mx-2">
                   <a target="_blank" :href="item.url"> Visit blog</a></b-button

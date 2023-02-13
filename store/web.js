@@ -2,6 +2,15 @@ export const state = () => ({
   images: [
     {
       id: Math.random(),
+      name: 'fuel',
+      url: 'https://saharafcs.com/',
+      hub: 'https://github.com/Gideon-kirimanjaro/visitors-App-React',
+      description:
+        ' This website has spearheaded the fuel management systems era, through the use of modern day technologies it is now easier to track fuel consumption',
+      header: 'Sahara FCS Website',
+    },
+    {
+      id: Math.random(),
       name: 'site6',
       url: 'https://www.grayagro.org/',
       hub: 'https://github.com/Gideon-kirimanjaro/visitors-App-React',

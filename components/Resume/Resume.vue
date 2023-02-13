@@ -1,12 +1,14 @@
 <template>
   <div id="resume" class="pb-3">
     <div>
-      <h2 id="header" class="d-flex justify-content-center">EXPERIENCE</h2>
+      <h4 id="header" class="d-flex justify-content-center">
+        *WORK EXPERIENCE*
+      </h4>
       <div
         id="section-div"
         class="d-flex justify-content-center px-md-5 mx-md-5"
       >
-        <p id="section" class="d-flex justify-content-center">
+        <p id="section" class="d-flex justify-content-center text-dark">
           I am a top Performing and result-oriented professional with a history
           and experience in different areas of information technology. I have
           over 2 years of fruitful experience, working in different positions
@@ -33,7 +35,7 @@
         <h5 class="d-flex justify-content-center my-2">
           {{ item.role }} ~~ {{ item.company }}
         </h5>
-        <p class="d-flex justify-content-center">
+        <p id="section" class="d-flex justify-content-center text-dark">
           {{ item.responsibilities }}
         </p>
       </div>
@@ -101,12 +103,6 @@ export default {
 </script>
 
 <style scoped>
-/* * {
-  font-family: Poppins;
-} */
-p {
-  font-weight: bold;
-}
 h5 {
   font-weight: bolder;
 }
@@ -125,9 +121,8 @@ h5 {
 #section {
   font-size: 1rem;
   font-family: Poppins;
-  font-weight: 700;
-  /* width: 800px; */
-  /* margin: 34px auto 0; */
+  font-weight: 500;
+  color: black important;
 }
 #sub-section {
   padding: 30px 0 0;
@@ -150,8 +145,8 @@ h5 {
   }
 }
 /* @media only screen and (min-width: 768px) {
-  #section {
-    width: 650px;
-  }
-} */
+    #section {
+      width: 650px;
+    }
+  } */
 </style>

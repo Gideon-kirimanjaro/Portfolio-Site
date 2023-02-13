@@ -16,7 +16,12 @@
     </div>
     <div class="row">
       <div v-for="image of images" :key="image.key" class="col">
-        <img :src="require(`@/static/images/${image.name}`)" alt="" />
+        <img
+          :src="require(`@/static/images/${image.name}`)"
+          alt=""
+          height="50"
+          width="50"
+        />
         <H5 class="px-2">{{ image.title }}</H5>
       </div>
     </div>
@@ -113,6 +118,41 @@ export default {
           key: Math.random(),
           name: 'illustrator.png',
           title: 'Adobe Illustrator',
+        },
+        {
+          key: Math.random(),
+          name: 'ps.png',
+          title: 'Adobe Photoshop',
+        },
+        {
+          key: Math.random(),
+          name: 'premier.png',
+          title: 'Adobe Premier',
+        },
+        {
+          key: Math.random(),
+          name: 'after.png',
+          title: 'Adobe After Effects',
+        },
+        {
+          key: Math.random(),
+          name: 'indesign.png',
+          title: 'Adobe Indesign',
+        },
+        {
+          key: Math.random(),
+          name: 'final.png',
+          title: 'Final Cut Pro',
+        },
+        {
+          key: Math.random(),
+          name: 'audition.png',
+          title: 'Adobe Audition',
+        },
+        {
+          key: Math.random(),
+          name: 'film.png',
+          title: 'Filmora',
         },
       ],
     }

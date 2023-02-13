@@ -71,9 +71,7 @@
       </div>
       <Profile />
     </div>
-
     <div ref="services">
-      <!-- <Services /> -->
       <Resume />
     </div>
     <div ref="blog">
@@ -124,7 +122,7 @@ export default {
   margin: 0%;
   padding: 0%;
 }
-body {
+/* body {
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   font-size: 16px;
@@ -132,7 +130,7 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
   color: #ffffff;
-}
+} */
 
 ::-webkit-scrollbar {
   width: 10px;
